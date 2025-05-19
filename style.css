@@ -1,0 +1,54 @@
+body{
+    background-color: rgba(178, 44, 231, 0.404);/*fondo morado para pantallas pequeñas */
+}
+@media (min-width: 768px ){
+    body{
+        background-color: lightpink;/*fondo rosa para pantallas grandes*/
+    }
+}
+
+p{
+    padding: 10px;
+}
+h1{
+    padding: 20px;
+}
+
+.contenedor{
+    padding: 20px;
+}
+.caja{
+    background-color: darkorange;
+    color: white;
+    padding: 20px;
+    display: block;
+    border: 1px solid black;
+    width: 30%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+@media (min-width: 768px){/*tablets*/
+    .caja{
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+@media (min-width:992){/*pantalla media*/
+    .caja{
+        width: 48%;
+        margin-right: 2%;
+    }
+}
+
+.caja:nth-child(2n){
+    margin-right: 0;
+}
+
+@media(min-width:1200px){/*pantalla grande*/
+    .caja{
+        width: 30%;
+        margin-bottom: 15px;
+        margin-right: 5%;
+    }
+}
