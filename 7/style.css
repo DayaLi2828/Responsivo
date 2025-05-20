@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr; /* 1 columna para móviles */
+    gap: 20px;
+    justify-items: center;
+}
+.boton{
+    background-color: lightcoral;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+.carta {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.carta img {
+    width: 80%;
+    height: auto;
+}
+
+.carta h2 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+  /* Tablet: 2 columnas */
+@media (min-width: 768px) {
+    body {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+  /* Escritorio: 3 columnas */
+@media (min-width: 992px) {
+    body {
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+  /* Pantallas grandes: 4 columnas */
+@media (min-width: 1200px) {
+    body {
+    grid-template-columns: repeat(4, 1fr);
+    }
+}

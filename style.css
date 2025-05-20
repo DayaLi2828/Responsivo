@@ -82,3 +82,26 @@ h1{
     margin-left: 58.4%;
     margin-top: -17.2%;
 }
+
+.tarjeta7{
+    background-color: antiquewhite;
+    border: 1px solid lightgreen;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 180px;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.tarjeta8{
+    background-color: antiquewhite;
+    border: 1px solid lightgreen;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 180px;
+    width: 300px;
+    margin-left: 30%;
+    margin-top: -17.2%;
+}
