@@ -1,0 +1,53 @@
+body{
+    background-color: bisque;
+}
+.contenedor{
+    padding: 20px;
+}
+.caja{
+    background-color: lightcoral;
+    color: white;
+    padding: 20px;
+    display: block;
+    border: 1px solid black;
+    width: 30%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+@media (min-width: 768px){/*tablets*/
+    .caja{
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+@media (min-width:992){/*pantalla media*/
+    .caja{
+        width: 48%;
+        margin-right: 2%;
+    }
+}
+
+.caja:nth-child(2n){
+    margin-right: 0;
+}
+
+@media(min-width:1200px){/*pantalla grande*/
+    .caja{
+        width: 30%;
+        margin-bottom: 15px;
+        margin-right: 5%;
+    }
+}
+.caja:nth-child(3n){
+    /*margin-right: 100px;*/
+}
+.boton{
+    background-color: aqua;
+    border: 1px solid black;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}

@@ -1,0 +1,9 @@
+.boton{
+    background-color: aqua;
+    border: 1px solid black;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}

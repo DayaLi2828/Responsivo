@@ -1,0 +1,18 @@
+body{
+    background-color: rgba(178, 44, 231, 0.404);/*fondo morado para pantallas pequeñas */
+}
+@media (min-width: 768px ){
+    body{
+        background-color: rgb(247, 123, 141);/*fondo rosa para pantallas grandes*/
+    }
+}
+
+.boton{
+    background-color: aqua;
+    border: 1px solid black;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
