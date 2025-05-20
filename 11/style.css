@@ -13,7 +13,6 @@ h1{
 
 .galeria{
     display: block;
-    grid-template-columns: 1fr;
     background-color: wheat;
     padding: 1.5rem;
     border: 1px solid black;
@@ -21,31 +20,147 @@ h1{
     text-align: left;
 }
 .pintura img{
-    display: grid; /* Convertimos cada .pintura en un contenedor grid para organizar la imagen y el texto */
-    /* Definimos dos columnas:
-    - La primera para la imagen (se ajusta a su contenido, máximo 50% del contenedor)
-       - La segunda para la información (ocupa el resto del espacio disponible) */
-    grid-template-columns: 50% 1fr; /* La imagen ocupará el 50% del ancho de .pintura, el resto para el texto */
-    gap: 15px; /* Espacio entre la imagen y la info */
-    align-items: start; /* Alinea los elementos al inicio de la celda verticalmente */
-    border: 1px solid #ddd; /* Borde para cada tarjeta individual */
-    padding: 10px;
+    align-items: start; 
+    border: 1px solid #ddd; 
+    padding: 50px;
     background-color: white;
+    margin: 10px;
+    width: 500px;
+    height: auto;
 }
-.pintura h2 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5em;
-    margin-left: 75%;
-}
+
 .pintura p{
     font-size: 1.3rem;
+    margin-left: 20%;
 }
-i{
-    box-shadow: 1px 8px 2px rgb(0, 0, 0 0.5);
-    border: 1px solid rgba(0, 0, 0, 0.3);
+.boton{
+    margin-left: 20%;
 
+}
+.descripcion1{
     position: absolute; 
-
-    top: 0; /* Lo pega al borde superior del contenedor */
+    top: 100%;
     bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow:  10px 4px 20px  rgba(0, 0, 0, 10);
+    background-color: antiquewhite;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin-left: 55%;/*mover a la derecha*/
+    margin-top: -24%;/*mover para arriba*/
+    margin-bottom: 10%;/*mover para abajo*/
+    overflow: hidden;     /* oculta el exceso */
+    word-wrap: break-word; /* parte las palabras largas */
+    border: 1px solid black;
+}
+
+.descripcion2{
+    position: absolute; 
+    top: 100%;
+    bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow:  10px 4px 20px  rgba(0, 0, 0, 10);
+    background-color: antiquewhite;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin-left: 55%;/*mover a la derecha*/
+    margin-top: 18%;/*mover para arriba y abajo */
+    margin-bottom: 10%;/*mover para abajo*/
+    overflow: hidden;     /* oculta el exceso */
+    word-wrap: break-word; /* parte las palabras largas */
+    border: 1px solid black;
+}
+
+.descripcion3{
+    position: absolute; 
+    top: 100%;
+    bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow:  10px 4px 20px  rgba(0, 0, 0, 10);
+    background-color: antiquewhite;
+    width: 350px;
+    height: 300px;
+    padding: 10px;
+    margin-left: 55%;/*mover a la derecha*/
+    margin-top: 57%;/*mover para arriba y abajo*/
+    margin-bottom: 10%;/*mover para abajo*/
+    overflow: hidden;     /* oculta el exceso */
+    word-wrap: break-word; /* parte las palabras largas */
+    border: 1px solid black;
+}
+
+.descripcion4{
+    position: absolute; 
+    top: 100%;
+    bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow:  10px 4px 20px  rgba(0, 0, 0, 10);
+    background-color: antiquewhite;
+    width: 370px;
+    height: 300px;
+    padding: 10px;
+    margin-left: 55%;/*mover a la derecha*/
+    margin-top: 105%;/*mover para arriba y abajo*/
+    margin-bottom: 10%;/*mover para abajo*/
+    overflow: hidden;     /* oculta el exceso */
+    word-wrap: break-word; /* parte las palabras largas */
+    border: 1px solid black;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .pintura img {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .pintura p,
+    .boton {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .descripcion1 {
+        position: static;
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .descripcion2 {
+        position: static;
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .descripcion3 {
+        position: static;
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .descripcion4 {
+        position: static;
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+}
+
+.boton-principal{
+    background-color: lightcoral;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
 }

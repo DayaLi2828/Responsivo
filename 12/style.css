@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2rem;
+    background-color: bisque;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Ocultar todas las imágenes por defecto */
+.imagen {
+    display: none;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Mostrar solo la imagen móvil en pantallas pequeñas */
+@media (max-width: 599px) {
+    .imagen-movil {
+    display: block;
+    }
+}
+
+/* Mostrar imagen de tablet en pantallas medianas */
+@media (min-width: 600px) and (max-width: 991px) {
+    .imagen-tablet {
+    display: block;
+    }
+}
+
+/* Mostrar imagen de escritorio en pantallas grandes */
+@media (min-width: 992px) {
+    .imagen-escritorio {
+    display: block;
+    }
+}
