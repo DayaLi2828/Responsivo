@@ -1,9 +1,72 @@
+body{
+    background-color: bisque;
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
 .boton{
-    background-color: aqua;
+    background-color: lightcoral;
     border: 1px solid black;
-    padding: 8px 15px;
+    padding: 10px;
+    margin: 10px;
     border-radius: 3px;
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
+}
+.perfil{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 300px;
+}
+p{
+    background-color: antiquewhite;
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+    padding: 10px;
+}
+p:hover{
+    color: purple;
+    text-decoration: dotted;
+}
+
+.perfil button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color:lightcoral;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (min-width:768px){/*tablet*/
+    .perfil{
+        max-width: 500px;
+        padding: 30ppx;
+    }
+    .perfil h1{
+        font-size: 24px;
+    }
+    .perfil p {
+        font-size: 16px;
+    }
+}
+@media (min-width: 992px) {/*escritorio*/
+    body {
+    background-color: #e0f7fa;
+    }
+    .perfil {
+    max-width: 600px;
+    padding: 40px;
+    }
+    .perfil button {
+    background-color: lightcoral;
+    }
 }
