@@ -1,0 +1,51 @@
+body{
+    background-color: lightgreen;
+    padding: 2rem;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow:  10px 4px 20px  rgba(0, 0, 0, 10);
+    background-color: aliceblue;
+}
+
+.galeria{
+    display: block;
+    grid-template-columns: 1fr;
+    background-color: wheat;
+    padding: 1.5rem;
+    border: 1px solid black;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.pintura img{
+    display: grid; /* Convertimos cada .pintura en un contenedor grid para organizar la imagen y el texto */
+    /* Definimos dos columnas:
+    - La primera para la imagen (se ajusta a su contenido, máximo 50% del contenedor)
+       - La segunda para la información (ocupa el resto del espacio disponible) */
+    grid-template-columns: 50% 1fr; /* La imagen ocupará el 50% del ancho de .pintura, el resto para el texto */
+    gap: 15px; /* Espacio entre la imagen y la info */
+    align-items: start; /* Alinea los elementos al inicio de la celda verticalmente */
+    border: 1px solid #ddd; /* Borde para cada tarjeta individual */
+    padding: 10px;
+    background-color: white;
+}
+.pintura h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+    margin-left: 75%;
+}
+.pintura p{
+    font-size: 1.3rem;
+}
+i{
+    box-shadow: 1px 8px 2px rgb(0, 0, 0 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    position: absolute; 
+
+    top: 0; /* Lo pega al borde superior del contenedor */
+    bottom: 0;
+}

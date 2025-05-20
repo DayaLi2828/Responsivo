@@ -1,0 +1,48 @@
+/* Estilos normales (pantalla) */
+body {
+font-family: Arial, sans-serif;
+padding: 20px;
+background-color: #f2f2f2;
+color: #333;
+}
+.boton{
+    background-color: lightcoral;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+header, footer {
+background-color: bisque;
+color: black;
+padding: 10px;
+}
+
+nav a {
+margin-right: 15px;
+color: lightcoral;
+text-decoration: none;
+}
+
+/* ===== Estilos para impresión ===== */
+@media print {
+body {
+    background-color: white;
+    color: black;
+}
+
+header, footer, nav {
+    display: none; /* Ocultar elementos innecesarios */
+}
+
+main {
+    font-size: 14pt;
+}
+
+p {
+    line-height: 1.6;
+}
+}

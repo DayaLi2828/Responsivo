@@ -1,0 +1,57 @@
+body{
+    background-color: bisque;
+    padding: 20px;
+}
+.formulario{
+    text-align: center;
+    background-color: lightcoral;
+    padding: 10px;
+    margin: 20px auto; 
+    width: 90%;        
+    max-width: 400px; 
+    margin-left: 440px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow:  10px 4px 20px  rgba(0, 0, 0, 10);
+}
+h1{
+    background-color: lightcoral;
+    text-align: center;
+    margin: 0;
+    box-shadow: 10px 4px 20px  rgba(0, 0, 0, 0.5);
+}
+h1:hover{
+    color: red;
+}
+.campo{
+    padding: 8px;
+    margin: 15px;
+    background-color: lightpink;
+    border-radius: 3px;
+}
+
+@media (min-width: 768px) {
+.formulario {
+    width: 50%;
+}
+
+.campo {
+    width: 80%;
+}
+}
+
+@media (min-width: 1200px) {
+.formulario {
+    width: 30%;
+}
+}
+
+.boton{
+    background-color: lightcoral;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
